@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstScreen"
+    android:background="@drawable/background">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/add_photo"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="190dp"
+            android:src="@drawable/add_photo"/>
+
+
+        <EditText
+            android:id="@+id/input_nama"
+            android:background="@drawable/edt_input"
+            android:layout_width="330dp"
+            android:layout_height="47dp"
+            android:hint="@string/name"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="45dp"
+            android:fontFamily="@font/poppins"
+            android:textSize="17sp"
+            android:paddingStart="20dp"/>
+
+        <EditText
+            android:id="@+id/input_palindrome"
+            android:layout_width="330dp"
+            android:layout_height="47dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/edt_input"
+            android:fontFamily="@font/poppins"
+            android:hint="@string/palindrome"
+            android:paddingStart="20dp"
+            android:textSize="17sp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_check"
+            android:layout_width="330dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:text="CHECK"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:backgroundTint="@color/hijau1"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_next"
+            android:layout_width="330dp"
+            android:layout_height="59dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:textStyle="bold"
+            app:cornerRadius="15dp"
+            android:text="NEXT"
+            android:textSize="17sp"
+            android:fontFamily="@font/poppins"
+            android:backgroundTint="@color/hijau1"/>
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>
